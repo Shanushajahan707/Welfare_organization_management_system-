@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- style goes here -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .menu_bar{
+            height: 80px;
+            width: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 5%;
+        }
+        .menu_bar ul{
+            list-style: none;
+            display: flex;
+        }
+        .menu_bar ul li{
+            padding: 10px 30px;
+            position: relative;
+        }        
+        .menu_bar ul li a{
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .menu_bar ul li a:hover{
+            color: red;
+        }
+        .dropdown{
+            display: none;
+        }
+        .menu_bar ul li:hover .dropdown{
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            background-color: black;
+        }
+        .dropdown ul{
+            display: block;
+            margin: 10px;
+        }
+        .dropdown ul li{
+            width: auto;
+            padding: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="menu_bar">
+        <div class="logo">
+            <a href="icare.html"><span>i</span>Care</a>
+        </div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown">
+                <ul>
+                    <li><a href="#">Childcare</a></li>
+                    <li><a href="#">Disability</a></li>
+                    <li><a href="#">Womencare</a></li>
+                    <li><a href="#">Oldage</a></li>
+                    <li><a href="#">Deaddiction</a></li>
+                </ul>
+            </div>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</body>
+</html>

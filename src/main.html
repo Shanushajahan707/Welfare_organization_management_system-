@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welfare_organization_project</title>
+    
+    <link href="/dist/output.css" rel="stylesheet">
+    <style>
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(35, 43, 43);
+    display: layout;
+    display: flex;
+    flex-wrap: wrap;
+}
+span{
+    color: red;
+}
+h1{
+    color: rgb(248, 242, 242);
+    position: relative;
+    
+}
+.logo{
+    padding: 62px;
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    letter-spacing: 6px;
+    position: absolute;
+    top: -41px;
+    height: 17px;
+    position: sticky;
+}
+.nav{
+    width: 98%;
+   color: aqua;
+    height: 85px;
+    padding-top: 16px;
+    font-size: 25px;
+    font-weight: bolder;
+    letter-spacing: 4px;
+   display: block;
+   
+   
+}
+ul{
+    
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+ul a:hover{
+    color: rgb(235, 5, 5);
+   
+}
+ul li a{
+    color: rgb(233, 223, 229);
+    
+}
+.img-scroll{
+   max-width:100%;
+   height: 400px;
+    display: flex;
+  padding : 40px;
+  
+}
+img{
+   width: 400px;
+   height: 300px;
+}
+.sec-main{
+    width: 100%;
+    height: 570px;
+    background-color: rgb(37, 39, 39);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.abt{
+    color: aliceblue;
+    font-size: 22px;
+   
+}
+.abt h1:hover{
+    color: red;
+}
+.abt-ctc{
+    color: lightcyan;
+    width: 57%;
+    height: 255px;
+    padding-bottom: 94px;
+}
+.Contact{
+    width: 100%;
+    height: 140px;
+    background-color: rgb(18, 27, 39);
+    display: grid;
+    color: beige;
+    font-size: 22px;
+
+}
+.Contact h4{
+    margin: 0;
+    padding-top: 2px;
+    display: flex;
+    justify-content: center;
+}
+
+</style>
+
+</head>
+
+<body>
+    <div class="main">
+         <div class="logo">
+              <h1 class="text-blue-400" ><span>i</span>CARE</h1>
+         </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="#About">About</a></li>          
+                    <li><a href="#">Contact</a></li>
+                </ul>     
+            </div>
+        <div class="img-scroll">
+            <marquee class="marq" scrollamount="10" loop="2" >
+                <img src="img\66313-ykoigjdjse-1583479947.jpg">
+                <img src="img\download.jpg" alt="">
+                <img src="img\img2.png" alt="">
+                <img src="img\download (1).jpg" alt="">
+
+            </marquee>
+        </div>
+    </div>
+    <div class="sec-main">
+            <div class="abt ">
+                <h1>About</h1>
+            </div>
+
+        <div class="abt-ctc">
+           
+                <p>
+                    The use of the web site has many positive effects on a society.
+                     Nowadays many individuals are interested to support child orphanage and disability centers financially but the issue is its not easy to find these centers locations nearby their places.
+
+                    This webpage is help to find location of:
+                    <ul>
+
+                      <li>  Disability centre  </li><br>
+
+                      <li>	Woman welfare centre </li>
+
+                      <li>  Child orphanage</li>
+
+                      <li>  Oldage home</li>
+
+                      <li> 	Deaddiction centre</li>
+                     </ul>
+
+                    It will help everyone to find the nearby centres as it was benefited the both parties. The organizations also able to got much more support from the public when its easy to access the informations.
+
+                    At first we implement our model in all over Kerala. In future we are planning to implement this all over our country and it can be very much helpful to our society.
+
+                </p>
+        </div>
+       
+
+    </div>
+    <div class="Contact">
+        <h4>Contact</h4>
+    </div>
+</body>
+
+</html>

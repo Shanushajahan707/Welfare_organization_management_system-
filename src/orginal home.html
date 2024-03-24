@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCARE</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="icon" type="img/x-icon" href="/img/icare.png">
+
+    <!-- style -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&display=swap');
+
+        /* body{
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        } */
+        * {
+            font-family: 'Comfortaa', cursive;
+        }
+
+        section {
+            background-color: rgba(253, 251, 251, 0.377);
+        }
+
+        .container {
+            position: relative;
+            margin: 0 auto;
+            padding: 0 1rem;
+            margin-top: auto;
+            /* padding-left: 4rem;
+            padding-right: 4rem; */
+            /* margin-top: -3rem; */
+        }
+
+        .a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo a {
+            text-decoration: none;
+            color: black;
+            position: relative;
+        }
+    
+        .logo1{                                              
+         position: absolute;
+          width:6px;
+          height: 6px;
+          background-color: red;
+          border-radius: 50%;
+          top: 10%;
+          left: 20px;
+          animation: pulse 2s infinite;
+
+        }
+        @keyframes pulse {
+	 0% {
+		 transform: scale(0.9);
+         box-shadow: 0 0 0 0 rgba(225,82, 82, 0.7);
+	}
+	 70% {
+		transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(225,82, 82, 0);
+	}
+	 100% {
+		transform: scale(0.9);
+	}
+}
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .mail {
+            padding-bottom: 8px;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        span {
+            color: red;
+
+        }
+
+        .logo {
+            font-size: 42px;
+        }
+
+        .menu-items {
+            display: flex;
+
+        }
+
+        .menu-items a {
+            text-decoration: none;
+            padding-left: 2.2rem;
+            font-weight: bold;
+            color: black;
+        }
+
+        .menu-items a:hover {
+            color: red;
+
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 4rem;
+            font-weight: bold;
+            /* text-transform: uppercase;  */
+        }
+
+        p {
+            text-align: justify;
+            margin-top: 4rem;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        li {
+            list-style: i;
+            font-weight: bolder;
+            margin: auto;
+            padding-bottom: .9rem;
+        }
+
+        .contact-sec form {
+            text-align: center;
+        }
+
+        .contact-sec form input,
+        .contact-sec form textarea {
+            width: 50%;
+            font-size: 1.1rem;
+            margin: 0.2rem 0;
+            padding: 0.8rem 0.6rem;
+            border: none;
+            border-bottom: 1.5px solid #f0f0f0;
+            outline: 2px;
+        }
+
+        .submit-btn {
+            margin: 1rem 0;
+            border: none;
+            font-size: 1rem;
+            color: #fff;
+            background: red;
+            opacity: 0.9;
+            padding: 0.6rem 2.4rem;
+            border-radius: 2rem;
+        }
+
+        .submit-btn:hover {
+            color: red;
+            background: #f0f0f0;
+        }
+
+        .footer {
+            text-align: center;
+            background: grey;
+            color: white;
+            height: 50vh;
+        }
+
+        .footer .text {
+            opacity: 0.8;
+            text-align: center;
+            margin-top: 280px;
+        }
+
+        /* slider */
+        .banner {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slider {
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+        }
+
+        #slideimg {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        @media only screen and (max-width: 768px) {
+            * {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+
+            html,
+            body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden;
+            }
+
+            .menu-items a {
+                text-decoration: none;
+                padding: 1rem;
+                color: black;
+                font-weight: bolder;
+            }
+
+            ul {
+                /* display: flex; */
+                display: inline;
+                /* align-items: center; */
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <!-- style end -->
+</head>
+
+<body onload="slider()">
+    <header>
+        <!-- navbar section with menu items -->
+        <nav class="container">
+            <div class="a">
+                <div class="logo">
+                    <a href="icare.html"><span>i</span>CARE</a>
+                    <div class="logo1">
+
+                    </div>
+                </div>
+                <div class="menu-items">
+                    <a href="icare.html">Home</a>
+                    <a href="search.html">Services</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+        <!-- slider starts -->
+        <div class="banner">
+            <div class="slider">
+                <img src="img/childcare.jpg" id="slideimg">
+            </div>
+
+             <!-- <div class="img-scroll">
+             <marquee class="marq" scrollamount="10" loop="2">
+            <img src="img/1.jpg">
+            <img src="img/2.jpg" alt="">
+            <img src="img/3.jpg" alt="">
+            <img src="img/4.png" alt="">
+            <img src="img/disability.jpg" alt="">
+              </marquee>-->
+
+       
+    </div> 
+            <!-- slider ends -->
+    </header>
+    <!-- About section start -->
+    <div class="container">
+        <section id="about">
+            <div class="about-sec">
+                <h1>About Us</h1>
+                <p>The use of the website has many positive effects on a society.
+                    Nowadays many individuals are interested to support child orphanage and disability centers
+                    financially but
+                    the issue is its not easy to find these centers locations nearby their places.
+                    This webpage is help to find location of:
+                <ul>
+                    <li>Disability Center</li>
+                    <li>Woman Welfare Center</li>
+                    <li>Child Orphanage</li>
+                    <li>Oldage Home</li>
+                    <li>Deaddiction Center</li>
+                </ul>
+                <br>
+                It will help everyone to find the nearby centres as it was benefited the both parties. The organizations
+                also
+                able to got much more support from the public when its easy to access the informations.
+                At first we implement our model in all over Kerala. In future we are planning to implement this all over
+                our
+                country and it can be very much helpful to our society.
+                </p>
+            </div>
+        </section>
+    </div>
+    <!-- About section ends -->
+
+    <!-- Contact Starts -->
+    <div class="container">
+        <section id="contact">
+            <div class="contact-sec">
+                <h1>Contact Us</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis velit nostrum voluptatibus
+                    obcaecati reiciendis, est consequatur nihil aliquid laudantium voluptas!</p>
+                <div class="cts">
+                    <p>Your feedback and suggestions help us to make the site more effective and standardized</p>
+                </div>
+                <h2>Get In Touch With Us</h2>
+                <form action="https://formsubmit.co/welfaremanagementstartup@gmail.com" method="post" target="_blank">
+                    <input type="text" name="Name" placeholder="Full Name" required>
+                    <input type="text" name="contact" placeholder="Contact Number" required>
+                    <input type="email" name="mail" placeholder="Email(Optional)">
+                    <textarea placeholder="Feedback & Suggestions" name="Message" rows="6" placeholder="Message"
+                        required></textarea><br>
+                    <button type="submit" class="submit-btn">Send Now</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    <!-- Contact Ends -->
+
+    <!-- footer starts -->
+    <footer class="footer center">
+        <!-- <div class="mail">
+            <a href="mailto: welfaremanagementstartup@gmail.com">welfaremanagementstartup@gmail.com</a>
+            
+        </div> -->
+        <div class="container">
+            <p class="text">Copyright &copy; iCare |All Rights Reserved</p>
+        </div>
+        </div>
+    </footer>
+    <!-- footer ends -->
+
+
+
+    <!-- slider script goes here -->
+    <script>
+        var slideimg = document.getElementById("slideimg");
+        var images = new Array(
+            "img/1.jpg",
+            "img/childcare.jpg",
+            "img/disability.jpg",
+            "img/2.jpg"
+        );
+        var len = images.length;
+        var i = 0;
+        function slider() {
+            if (i > len - 1) {
+                i = 0;
+            }
+            slideimg.src = images[i];
+            i++;
+            setTimeout('slider()', 3000);
+        }
+    </script>
+</body>
+
+</html>

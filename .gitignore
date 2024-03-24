@@ -1,0 +1,23 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore PHP Composer dependencies
+/vendor/
+
+# Ignore environment-specific files
+.env
+
+# Ignore SQL database dump files
+*.sql
+
+# Ignore user-specific IDE settings
+.vscode/
+.idea/
+
+# Ignore log files
+*.log
+
+node_modules/*
+
+.pdf
